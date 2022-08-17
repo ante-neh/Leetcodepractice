@@ -3,18 +3,17 @@ class Solution:
         """
         Do not return anything, modify nums1 in-place instead.
         """
-        L,R,r=m-1,n+m-1,n-1
-        while r>-1:
-            if nums2[r]>nums1[L]:
-                nums1[R]=nums2[r]
-                R-=1
-            elif nums2[r]<=nums1[L]:
-                while nums2[r]<nums1[L]:
-                    nums1[R]=nums1[L]
-                    L-=1
-                    R-=1
-                nums1[L+1]=nums2[r]
-            r-=1
-
-#time complexity O(n)
-#space complexity O(1)
+        last=m+n-1
+        while m>0 and n>0:
+            if nums1[m-1]>nums2[n-1]:
+                nums1[last]=nums1[m-1]
+                m-=1
+            else:
+                nums1[last]=nums2[n-1]
+                n-=1
+            last-=1
+        while n>0:
+            nums1[last]=nums2[n-1]
+            n,last=n-1,last-1
+        #time complexity O(n)
+        #space complexity O(1)
