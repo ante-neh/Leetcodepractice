@@ -9,5 +9,3 @@ def getMaxSum(arr, k):
         maxSum=max(maxSum,sum)
         l+=1
     return maxSum
-
-    
