@@ -1,16 +1,19 @@
 def getMinMaxDiff(nums, k):
     currentSum=0
-    maxSum=-100000
-    minSum=float("inf")
+    for i in range(k):
+        currentSum+=nums[i]
+    maxSum=currentSum/k
+    minSum=currentSum/k
     l=0
-    for r in range(len(nums)):
+    for r in range(k,len(nums)):
         currentSum+=nums[r]
-        if (r-l+1)==k:
-            average=currentSum/k
-            maxSum=max(maxSum,average)
-            minSum=min(minSum,average)
-            currentSum-=nums[l]
-            l+=1
+        currentSum-=nums[l]
+        maxSum=max(maxSum,currentSum/k)
+        minSum=min(currentSum/k,minSum)
+        l+=1
     return maxSum-minSum
+arr=[3, 8, 9, 15]
+k= 2
+print(getMinMaxDiff(arr, k))
 #time complexity O(n)
 #space complexity O(1)
