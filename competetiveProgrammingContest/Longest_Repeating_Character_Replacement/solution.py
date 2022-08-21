@@ -10,4 +10,4 @@ def characterReplacement(self, s, k):
         maxLen=max(maxLen,r-l+1)
     return maxLen
 #time complexity o(n)
-#space complexity (1)
+#space complexity (n)
