@@ -3,7 +3,7 @@ def getDuplicates(nums, k):
     l=0
     for r in range(len(nums)):
         numsCount[nums[r]]=1+numsCount.get(nums[r],0)
-        while(len(numsCount)>k):
+        if (r-l+1)==k:
             numsCount[nums[l]]-=1
             if numsCount[nums[l]]==0:
                 numsCount.pop(nums[l])

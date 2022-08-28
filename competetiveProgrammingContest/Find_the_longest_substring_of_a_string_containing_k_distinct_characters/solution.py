@@ -1,5 +1,5 @@
 def getLongest(s, k):
-    l,r=0,0
+    l=0
     sCount={}
     maxLen=0
     for r in range(len(s)):

@@ -20,4 +20,3 @@ class Solution:
         return result
     #time complexity O(nlogn)
     #space complexity O(n)
-                
