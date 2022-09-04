@@ -12,7 +12,7 @@ class Solution:
             if not kth:
                 break
             groupNext=kth.next
-            prev,current=kth.next,groupPrev
+            prev,current=kth.next,groupPrev.next
             while current!=groupNext:
                 next=current.next
                 current.next=prev
@@ -23,7 +23,7 @@ class Solution:
             groupPrev=temp
         return node.next
     def getKth(self,current,k):
-        while k>0:
+        while current and k>0:
             current=current.next
             k-=1
         return current
