@@ -12,7 +12,7 @@ class Solution:
         oldToCopy={None:None}
         current=head
         while current:
-            copy=Node(current.val)
+            copy=Node(current.next)
             oldToCopy[current]=copy
             current=current.next
         current=head

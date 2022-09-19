@@ -17,6 +17,6 @@ class Solution:
                 if curdiff<mindiff:
                     mindiff=curdiff
                     result=threesum
-        return threesum
+        return result
     #time complexity O(nlogn)
     #space complexity O(1)

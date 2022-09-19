@@ -8,5 +8,3 @@ def getCountDistinct(nums):
     return counter
 #time complexity O(n)
 #space complexity O(n)
-
- 

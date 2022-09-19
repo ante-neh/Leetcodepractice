@@ -16,4 +16,19 @@ Input:  ar1[] = {1, 4, 5, 7};
         x = 50      
 Output:  7 and 40
 
+        l=0
+        r=len(ar2)-1
+        while l<len(ar1) and r>0:
+                sum=ar1[l]+ar2[r]
+                diff=abs(sum-x)
+                if diff<minDiff:
+                        minDiff=diff
+                        result=[nums[l],nums[r]]
+                if sum<x:
+                        l+=1
+                elif sum>x:
+                        r-=1
+                else:
+                        return [nums[l],nums[r]]
+        return result
         
