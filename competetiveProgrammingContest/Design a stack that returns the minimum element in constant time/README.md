@@ -1,0 +1,2 @@
+Design a stack to support an additional operation that returns the minimum element from the stack in constant time.
+The stack should continue supporting all other operations like push, pop, top, size, empty, etc., with no degradation in these operations’ performance.
