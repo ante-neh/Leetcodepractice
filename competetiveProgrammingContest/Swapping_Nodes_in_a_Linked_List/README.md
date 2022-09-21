@@ -24,4 +24,3 @@ Constraints:
     The number of nodes in the list is n.
     1 <= k <= n <= 105
     0 <= Node.val <= 100
-
