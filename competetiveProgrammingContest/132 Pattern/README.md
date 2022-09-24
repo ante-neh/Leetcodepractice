@@ -10,7 +10,6 @@ Given an array of n integers nums, a 132 pattern is a subsequence of three integ
 Return true if there is a 132 pattern in nums, otherwise, return false.
 
  
-
 Example 1:
 
 Input: nums = [1,2,3,4]
