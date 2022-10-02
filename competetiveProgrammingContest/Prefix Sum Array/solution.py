@@ -1,7 +1,7 @@
 def prefix(nums):
-    prefixSum=[]
     sum=0
-    for i in range(0,len(nums)):
+    prefixSum=[]
+    for i in range(len(nums)):
         sum+=nums[i]
         prefixSum.append(sum)
     return prefixSum
