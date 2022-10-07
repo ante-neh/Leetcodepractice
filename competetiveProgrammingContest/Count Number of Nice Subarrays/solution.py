@@ -11,7 +11,7 @@ class Solution:
         for num in nums:
             curSum+=num
             diff=curSum-k
-            counter=prefixSum.get(diff,0)
+            counter+=prefixSum.get(diff,0)
             prefixSum[curSum]=1+prefixSum.get(curSum,0)
         return counter
 
