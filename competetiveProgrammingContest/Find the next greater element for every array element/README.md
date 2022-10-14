@@ -16,3 +16,4 @@ Output: [-1, -1, -1, -1, -1]
  
  
 Note that the next greater element for the last array element is always -1. 
+

@@ -8,6 +8,3 @@ class Solution:
                 result[index]=num
             stack.append([num,i])
         return result
-sol=Solution()
-num= [2, 5, 3, 7, 8, 1, 9]
-print(sol.findPrevSmaller(num))
