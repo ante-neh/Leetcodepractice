@@ -10,5 +10,5 @@ def getLongestSubstring(s):
             l=r
         maxLen=max(maxLen,r-l)
     return maxLen
-str = ""
+str = "codeforintelligentses"
 print(getLongestSubstring(str))
